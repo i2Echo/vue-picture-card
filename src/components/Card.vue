@@ -9,7 +9,8 @@
         <div class="category long-text" v-if="this.category">{{ category }}</div>
         <div class="column-flex more">
           <div class="long-text">{{ discription }}</div>
-          <div class="fa fa-share"></div>
+          <icon name="share"></icon>
+          <!-- <div class="fa fa-share"></div> -->
         </div>
         
       </div>
@@ -19,8 +20,14 @@
 </template>
 
 <script>
+import 'vue-awesome/icons/share'
+import Icon from 'vue-awesome/components/Icon'
+
 export default {
   name: 'card',
+  components: {
+    Icon
+  },
   props: {
     width: {
       type: Number,
@@ -62,7 +69,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import '../assets/css/font-awesome.min.css';
 
 .card {
   width: 250px;
@@ -132,7 +138,7 @@ export default {
   text-overflow:ellipsis;
   white-space: nowrap;
 }
-.fa.fa-share {
+.fa-icon {
   color: #26A69A;
 }
 </style>
