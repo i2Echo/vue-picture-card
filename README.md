@@ -10,12 +10,12 @@ npm install vue-picture-card
 ## Usage
 ``` javascript
 import VuePictureCard from 'vue-picture-card'
-import Css from 'vue-picture-card/dist/vue-picture-card.min.css'
+import 'vue-picture-card/dist/vue-picture-card.min.css'
 export default {
   ...
   components:{
-      "vue-picture-card": vue-picture-card
-    },
+      "vue-picture-card": VuePictureCard
+  },
   ...
 }
 ```
