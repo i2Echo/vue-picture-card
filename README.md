@@ -1,21 +1,24 @@
-# picture-card
+# vue-picture-card
 
-> A Vue.js project
+> A vue component to show a picture card
 
-## Build Setup
-
+## Installation
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+npm install vue-picture-card
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Usage
+``` javascript
+import VuePictureCard from 'vue-picture-card'
+import Css from 'vue-picture-card/dist/vue-picture-card.min.css'
+export default {
+  ...
+  components:{
+      "vue-picture-card": vue-picture-card
+    },
+  ...
+}
+```
+
+## License
+Released under the MIT License.
