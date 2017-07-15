@@ -24,9 +24,6 @@ var webpackConfig = merge(baseWebpackConfig, {
   //   filename: utils.assetsPath('js/[name].[chunkhash].js'),
   //   chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   // },
-  externals: {
-    Vue: "Vue"
-  },
   output: {
     path: config.bundle.assetsRoot,
     publicPath: config.bundle.assetsPublicPath,
