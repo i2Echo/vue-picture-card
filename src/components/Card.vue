@@ -107,6 +107,7 @@ export default {
 
 .card .discription {
   font-size: 14px;
+  text-align: left;
   display: flex;
   flex: 1;
   align-items: center;
