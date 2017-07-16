@@ -9,7 +9,8 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/main.js',
+    // vue: ['vue']
   },
   output: {
     path: config.build.assetsRoot,
@@ -17,6 +18,9 @@ module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
+  },
+  externals: {
+    vue: 'Vue'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
