@@ -21,4 +21,4 @@ export default {
 ```
 
 ## License
-Released under the MIT License.
+Released under the [MIT](https://kujohnln.mit-license.org) License.
